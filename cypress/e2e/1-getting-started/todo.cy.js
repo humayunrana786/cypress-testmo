@@ -31,7 +31,7 @@ describe('example to-do app', () => {
     // to get just the first and last matched elements individually,
     // and then perform an assertion with `should`.
     cy.get('.todo-list li').first().should('have.text', 'Pay electric bill')
-    cy.get('.todo-list li').last().should('have.text', 'Walk the dogs')
+    cy.get('.todo-list li').last().should('have.text', 'Walk the dog')
   })
 
   it('can add new todo items', () => {
@@ -101,7 +101,7 @@ describe('example to-do app', () => {
       cy.get('.todo-list li')
         .should('have.length', 1)
         .first()
-        .should('have.text', 'Walk the dogs')
+        .should('have.text', 'Walk the dog')
 
       // For good measure, let's also assert that the task we checked off
       // does not exist on the page.
